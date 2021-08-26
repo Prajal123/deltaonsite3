@@ -4,21 +4,29 @@ const stop=document.getElementById('stop');
 const recording=document.getElementById('last-recording');
 
 var mediaRecorder;
-
+let stop1;
 start.addEventListener('click', async function(){
-    let stream = await recordScreen();
-    let mimeType = 'video/webm';
-    mediaRecorder = createRecorder(stream);
+     stop1 = await recordScreen();
+   
+    mediaRecorder = createRecorder(stop1);
 
 })
 
 stop.addEventListener('click', function(){
+   
     mediaRecorder.stop();
- 
+    let tracks=stop1.getTracks();
+    tracks.forEach(element => {
+        element.stop();
+    });
+    stop1=null;
+    
 })
 
+
+
 async function recordScreen() {
-    return await navigator.mediaDevices.getDisplayMedia({
+  return await navigator.mediaDevices.getDisplayMedia({
         audio: true, 
         video: { mediaSource: "screen"}
     });
