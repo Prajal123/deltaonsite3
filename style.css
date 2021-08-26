@@ -1,0 +1,37 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+button{
+    cursor: pointer;
+    font-size: 20px;
+}
+#start{
+position: absolute;
+top:70px;
+left:300px;
+}
+
+#last-recording{
+    margin-left: 150px;
+    margin-top: 150px;
+}
+
+.last{
+    position: absolute;
+    top:120px;
+    left:450px;
+}
+
+#stop{
+    position: absolute;
+    top:70px;
+    left:600px;
+}
+
+.screen{
+    margin-top: 35px;
+    margin-left: 200px;
+}
