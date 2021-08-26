@@ -4,8 +4,12 @@
     box-sizing: border-box;
 }
 
-body{
+.bg{
     background-image: url('img2.jpg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #video{
     background-color: white;
@@ -49,5 +53,4 @@ h3{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
 }
