@@ -4,34 +4,50 @@
     box-sizing: border-box;
 }
 
+body{
+    background-image: url('img2.jpg');
+}
+#video{
+    background-color: white;
+}
+.multicolortext {
+    background-image: linear-gradient(to left, indigo, green, blue,  orange, red);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
 button{
     cursor: pointer;
     font-size: 20px;
+   background-color: blanchedalmond;
+   border:2px solid black;
+   padding: 4px;
+   border-radius: 5px;
+   margin-bottom: 10px;
+}
+
+button:hover{
+    color:white;
+    background-color: black;
+}
+h1{
+    margin:10px;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 #start{
-position: absolute;
-top:70px;
-left:300px;
+    margin-right: 40px;
 }
-
-#last-recording{
-    margin-left: 150px;
-    margin-top: 150px;
+h3{
+    margin-top: 20px;
+    margin-left: 100px;
+    margin-bottom: 20px;
 }
-
-.last{
-    position: absolute;
-    top:120px;
-    left:450px;
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
-#stop{
-    position: absolute;
-    top:70px;
-    left:600px;
-}
-
-.screen{
-    margin-top: 35px;
-    margin-left: 200px;
 }
